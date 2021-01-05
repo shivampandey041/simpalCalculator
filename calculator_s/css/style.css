@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #009688;
+}
+
+.Calculator {
+    display: grid;
+    grid-template-rows: 8% 25% auto;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.Calculator-header {
+    text-align: center;
+}
+
+.Calculator-body {
+    background-color: #fbe9e7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    text-align: right;
+}
+
+.Calculator-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.Calculator-footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.4s all;
+}
+
+.Calculator-footer div.symbol {
+    background-color: #ff7043;
+    color: white;
+}
+
+.Calculator-footer div.symbol-dark {
+    background-color: #f4511e;
+    color: white;
+}
+
+.Calculator-footer div:hover {
+    cursor: pointer;
+}
+
+.Calculator-footer div:hover {
+    background-color: #e5e5e5;
+}
+
+.Calculator-footer div.symbol:hover {
+    background-color: #ff8a65;
+}
